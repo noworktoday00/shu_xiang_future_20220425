@@ -57,19 +57,19 @@
           <p class="text-center text-light">※ 點選圖片中的人物，會有意想不到的效果哦</p>
           <img class="img-fluid" id="edge-computing-map-img" src="../img/edge_computing/edge_computing.gif" usemap="#edge-computing-map" alt="" />
           <map name="edge-computing-map" id="edge-computing-map">
-            <span data-bs-toggle="modal" data-bs-target="#homePodModal">
+            <span class="loud-link-click" data-sound="decision8" data-bs-toggle="modal" data-bs-target="#homePodModal">
               <area  alt="" title="邊緣計算與智慧家居" href="#" shape="poly" coords="151,318,225,356,285,323,289,307,337,280,338,233,323,222,320,208,295,206,250,235,249,263,242,256,229,223,210,216,193,221,184,250,151,269" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#medicationModal">
+            <span class="loud-link-click" data-sound="decision4" data-bs-toggle="modal" data-bs-target="#medicationModal">
               <area  alt="" title="邊緣計算與即時醫療監控" href="#" shape="poly" coords="395,240,447,268,500,238,502,172,579,222,658,183,654,164,594,127,578,127,547,116,549,86,539,84,493,110,448,111,393,144" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#doctorModal">
+            <span class="loud-link-click" data-sound="decision5" data-bs-toggle="modal" data-bs-target="#doctorModal">
               <area  alt="" title="邊緣計算與醫療診斷" href="#" shape="poly" coords="887,341,915,327,910,307,936,299,943,281,923,197,903,181,879,180,862,198,854,232,815,223,791,237,774,246,774,297,831,329,882,304,885,346" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#carModal">
+            <span class="loud-link-click" data-sound="decision6" data-bs-toggle="modal" data-bs-target="#carModal">
               <area  alt="" title="邊緣計算與自動駕駛系統" href="#" shape="poly" coords="608,476,672,506,830,416,829,389,777,371,677,411,627,438" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#trafficModal">
+            <span class="loud-link-click" data-sound="decision7" data-bs-toggle="modal" data-bs-target="#trafficModal">
               <area  alt="" title="邊緣計算與即時交通監控" href="#" shape="poly" coords="341,330,598,481,602,535,569,566,496,534,425,577,239,473,278,420,283,358" style="outline:none;" target="_self"     />
             </span>
           </map>
@@ -88,25 +88,25 @@
             <div class="mx-5 mb-5 border border-light rounded p-3">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault1">
                   好像可以讓醫療相關的相關效能以及隱私更完善
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault2">
                   聽說可以讓 Homed Pod 類別的產品更有效率
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault3">
                   感覺應用在電動車上，可以發揮更好的自動控制效果
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault4">
                   跟邊緣計算比起來，雲計算好像還是比較強大呢
                 </label>              
               </div>
@@ -149,7 +149,7 @@
             </div>
             <div class="mx-5 mb-5">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
+                <button class="btn btn-outline-light loud-link-click" type="button" data-sound="decision11" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
               </div>
             </div>
           </form>
@@ -477,6 +477,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/loudlinks.min.js"></script>
     <script>
       $(document).ready(function (e) {
         $("img[usemap]").rwdImageMaps();

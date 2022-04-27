@@ -57,19 +57,19 @@
           <p class="text-center text-light">※ 點選圖片中的人物，會有意想不到的效果哦</p>
           <img class="img-fluid" id="cloud-computing-map-img" src="../img/cloud_computing/cloud_computing.gif" usemap="#cloud-computing-map" alt="" />
           <map name="cloud-computing-map" id="cloud-computing-map">
-            <span data-bs-toggle="modal" data-bs-target="#educationModal">
+            <span class="loud-link-click" data-sound="decision8" data-bs-toggle="modal" data-bs-target="#educationModal">
               <area  alt="" title="雲計算的線上教學應用..." href="#" shape="poly" coords="769,374,771,288,848,244,903,275,918,272,926,293,964,317,967,392,956,398,935,387,928,397,909,405,934,422,890,449,854,438,838,448,837,467,832,484,809,471,812,441,796,431,788,413,795,392" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#entertainmentModal">
+            <span class="loud-link-click" data-sound="decision2" data-bs-toggle="modal" data-bs-target="#entertainmentModal">
               <area  alt="" title="雲計算與生活娛樂" href="#" shape="poly" coords="546,426,647,493,735,444,734,362,727,359,641,405,639,417,586,406,588,387,603,373,605,338,585,301,563,300,540,322,540,366,552,389,554,410" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#taxiModal">
+            <span class="loud-link-click" data-sound="decision3" data-bs-toggle="modal" data-bs-target="#taxiModal">
               <area  alt="" title="雲計算與交通服務" href="#" shape="poly" coords="599,548,600,511,528,465,487,457,432,484,396,541,357,562,356,600,431,642,451,632,471,640,494,630,504,611,509,598,533,585,552,591,572,584,586,571,588,556" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#travelModal">
+            <span class="loud-link-click" data-sound="decision4" data-bs-toggle="modal" data-bs-target="#travelModal">
               <area  alt="" title="雲計算與旅遊休閒" href="#" shape="poly" coords="120,457,183,494,244,461,247,487,266,499,275,521,297,517,317,513,337,500,329,474,315,460,314,440,298,428,308,420,302,281,243,250,120,318" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#shoppingModal">
+            <span class="loud-link-click" data-sound="decision5" data-bs-toggle="modal" data-bs-target="#shoppingModal">
               <area  alt="" title="雲計算與線上購物..." href="#" shape="poly" coords="307,363,309,342,333,329,335,317,317,305,330,275,309,248,316,207,328,178,359,177,385,204,387,218,420,200,496,231,498,309,477,328,494,339,490,355,399,410,380,411" style="outline:none;" target="_self"     />
             </span>
           </map>
@@ -89,25 +89,25 @@
             <div class="mx-5 mb-5 border border-light rounded p-3">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault1">
                   我會使用網路購物上面的比價網站，去挑選最划算的商品
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault2">
                   最多使用的的應該就是 Google 的雲端硬碟了吧?
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault3">
                   線上教育課程超棒的，我可以在上面獲得很多新的知識
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault4">
                   聽音樂什麼的，系統都會幫我找到我期待的歌單，真不錯
                 </label>              
               </div>
@@ -150,7 +150,7 @@
             </div>
             <div class="mx-5 mb-5">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
+                <button class="btn btn-outline-light loud-link-click" data-sound="decision11" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
               </div>
             </div>
           </form>
@@ -479,6 +479,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/loudlinks.min.js"></script>
     <script>
       $(document).ready(function (e) {
         $("img[usemap]").rwdImageMaps();

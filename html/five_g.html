@@ -57,19 +57,19 @@
           <p class="text-center text-light">※ 點選圖片中的人物，會有意想不到的效果哦</p>
           <img class="img-fluid" id="five-g-map-img" src="../img/five_g/five_g.gif" usemap="#five-g-map" alt="" />
           <map name="five-g-map" id="five-g-map">
-            <span data-bs-toggle="modal" data-bs-target="#transportationModal">
+            <span class="loud-link-click" data-sound="decision2" data-bs-toggle="modal" data-bs-target="#transportationModal">
               <area  alt="" title="5G與物流應用" href="#" shape="poly" coords="941,440,1011,404,1008,380,999,354,980,313,968,305,973,281,868,221,812,247,788,235,763,250,751,254,726,268,726,285,742,297,740,315,772,326,784,350,794,368,814,383,828,383,842,394,853,415,879,418,896,415,912,436,928,443" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#droneModal">
+            <span class="loud-link-click" data-sound="decision3" data-bs-toggle="modal" data-bs-target="#droneModal">
               <area  alt="" title="5G與無人機操作" href="#" shape="poly" coords="486,144,503,171,468,195,413,237,369,250,316,228,261,176,288,120,381,90,443,107" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#vrGlassesModal">
+            <span class="loud-link-click" data-sound="decision4" data-bs-toggle="modal" data-bs-target="#vrGlassesModal">
               <area  alt="" title="VR與5G" href="#" shape="poly" coords="619,184,646,189,660,218,679,240,701,230,714,193,683,185,709,161,717,122,744,98,746,56,704,46,690,45,657,37,635,41,625,49,616,25,594,21,582,35,584,57,597,73,584,77,585,100,599,108,596,126,599,151,604,167,579,176,589,194,612,180" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#factoryModal">
+            <span class="loud-link-click" data-sound="decision5" data-bs-toggle="modal" data-bs-target="#factoryModal">
               <area  alt="" title="5G與生產監控" href="#" shape="poly" coords="588,632,686,577,685,553,811,484,820,470,807,458,749,427,638,485,619,477,619,464,587,448,549,465,547,481,533,487,521,476,556,452,555,429,520,409,483,429,483,451,437,430,417,427,354,465,354,483,416,521,392,533,390,564,426,584,461,566,460,543,482,556,479,574" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#driverModal">
+            <span class="loud-link-click" data-sound="decision6" data-bs-toggle="modal" data-bs-target="#driverModal">
               <area  alt="" title="5G與駕駛監測系統" href="#" shape="poly" coords="146,387,147,375,129,295,213,339,232,328,294,365,315,354,309,337,289,337,277,302,293,283,304,253,316,242,335,242,356,256,363,300,363,330,346,346,356,367,341,376,312,376,339,393,337,406,263,453" style="outline:none;" target="_self"     />
             </span>
           </map>
@@ -88,25 +88,25 @@
             <div class="mx-5 mb-5 border border-light rounded p-3">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault1">
                   感覺好像平常使用的網路速度變快了
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault2">
                   聽說自動駕駛車跟 5G 很有關係 ?
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault3">
                   5 G 搭配倉管以及物流，真的可以提高整個工作的流程呢 !
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault4">
                   我覺得 5G 可以搭配其他的新科技，創造出更好的未來 。
                 </label>              
               </div>
@@ -149,7 +149,7 @@
             </div>
             <div class="mx-5 mb-5">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
+                <button class="btn btn-outline-light loud-link-click" type="button" data-sound="decision11" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
               </div>
             </div>
           </form>
@@ -475,6 +475,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/loudlinks.min.js"></script>
     <script>
       $(document).ready(function (e) {
         $("img[usemap]").rwdImageMaps();

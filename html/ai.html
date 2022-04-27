@@ -62,7 +62,7 @@
           usemap="#ai-map"
           alt="" />
           <map name="ai-map" id="ai-map">
-          <span data-bs-toggle="modal" data-bs-target="#sportModal">
+          <span class="loud-link-click" data-sound="decision8" data-bs-toggle="modal" data-bs-target="#sportModal">
             <area  
             alt="" 
             title="AI 運用在體育賽事上..." 
@@ -72,7 +72,7 @@
             style="outline:none;" 
             target="_self" />
           </span>
-          <span data-bs-toggle="modal" data-bs-target="#medicalModal">
+          <span class="loud-link-click" data-sound="decision2" data-bs-toggle="modal" data-bs-target="#medicalModal">
             <area  
             alt="" 
             title="AI 對醫療的幫助是..." 
@@ -82,7 +82,7 @@
             style="outline:none;" 
             target="_self" />
           </span>
-          <span data-bs-toggle="modal" data-bs-target="#trafficModal">
+          <span class="loud-link-click" data-sound="decision3" data-bs-toggle="modal" data-bs-target="#trafficModal">
             <area  
             alt="" 
             title="AI 讓車子變聰明了..." 
@@ -92,7 +92,7 @@
             style="outline:none;" 
             target="_self" />
           </span>
-          <span data-bs-toggle="modal" data-bs-target="#shoppingModal">
+          <span class="loud-link-click" data-sound="decision4" data-bs-toggle="modal" data-bs-target="#shoppingModal">
             <area  
             alt="" 
             title="AI 對零售服務業的幫助..." 
@@ -102,7 +102,7 @@
             style="outline:none;" 
             target="_self" />
           </span>
-          <span data-bs-toggle="modal" data-bs-target="#assistantModal">
+          <span class="loud-link-click" data-sound="decision5" data-bs-toggle="modal" data-bs-target="#assistantModal">
             <area  
             alt="" 
             title="AI 在日常生活中的角色..." 
@@ -128,25 +128,25 @@
             <div class="mx-5 mb-5 border border-light rounded p-3">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault1">
                   或許會有點改變 ?
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault2">
                   不知道耶，感覺機器人會自己思考有點可怕 >< |||
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault3">
                   看起來會有很多產業會因為人工智慧的影響
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault4">
                   希望可以因為這樣的科技帶來更便利的生活
                 </label>              
               </div>
@@ -189,7 +189,7 @@
             </div>
             <div class="mx-5 mb-5">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
+                <button class="btn btn-outline-light loud-link-click"  data-sound="decision11" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
               </div>
             </div>
           </form>
@@ -364,270 +364,123 @@
     </div>
     <!-- 互動modal -->
     <!-- sportModal -->
-    <div
-      class="modal fade"
-      id="sportModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark">
+    <div class="modal fade" id="sportModal" tabindex="-1" aria-labelledby="sportModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
-            <h5 class="modal-title text-light" id="exampleModalLabel">
-              體育賽事中的AI
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title" id="sportModalLabel">體育賽事中的AI</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <img
-                    class="img-fluid"
-                    src="../img/ai/for_modal/sport.png"
-                    alt=""
-                  />
-                  <p class="text-light">
-                    AI
-                    可用來擷取賽事現場的影像，並提供報告給教練，建議如何更理想地規劃比賽，包括配置最佳的場上位置與策略。
-                  </p>
-                </div>
-              </div>
+          <div class="modal-body container">
+            <div class="row justify-content-center">
+              <img class="col-6 img-fluid" src="../img/ai/for_modal/sport.png" alt="">
             </div>
+            <hr>
+            <p>
+              AI 可用來擷取賽事現場的影像，並提供報告給教練，建議如何更理想地規劃比賽，包括配置最佳的場上位置與策略。
+            </p>
           </div>
-          <div class="modal-footer container">
-            <div class="row">
-              <button
-                type="button"
-                class="col btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+          <div class="modal-footer">
+              <button type="button" class="col btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
     <!-- trafficModal -->
-    <div
-      class="modal fade"
-      id="trafficModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark">
+    <div class="modal fade" id="trafficModal" tabindex="-1" aria-labelledby="trafficModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
-            <h5 class="modal-title text-light" id="exampleModalLabel">
-              AI讓交通進化了!!!
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title" id="trafficModalLabel">AI讓交通進化了!!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <img
-                    class="img-fluid"
-                    src="../img/ai/for_modal/traffic.png"
-                    alt=""
-                  />
-                  <p class="text-light">
-                    AI
-                    能透過影像辨識技術，增強車輛辨識、號誌管理、交通安全管理等資訊整合。目前，台灣交通的人工智慧應用，已發展到自駕車、車流計算、路況安全預警、路網優化等領域。
-                  </p>
-                </div>
-              </div>
+          <div class="modal-body container">
+            <div class="row justify-content-center">
+              <img class="col-6 img-fluid" src="../img/ai/for_modal/traffic.png" alt="">
             </div>
+            <hr>
+            <p>
+              AI 能透過影像辨識技術，增強車輛辨識、號誌管理、交通安全管理等資訊整合。目前，台灣交通的人工智慧應用，已發展到自駕車、車流計算、路況安全預警、路網優化等領域。
+            </p>
           </div>
-          <div class="modal-footer container">
-            <div class="row">
-              <button
-                type="button"
-                class="col btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+          <div class="modal-footer">
+              <button type="button" class="col btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
     <!-- medicalModal -->
-    <div
-    class="modal fade"
-    id="medicalModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h5 class="modal-title text-light" id="exampleModalLabel">
-            AI醫生助理的協助...
-          </h5>
-          <button
-            type="button"
-            class="btn-close btn-close-white"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <img
-                  class="img-fluid"
-                  src="../img/ai/for_modal/doctor.png"
-                  alt=""
-                />
-                <p class="text-light">
-                  AI 應用程式可提供個人化的醫療和 X
-                  光判讀。個人健康照護助理可以扮演人生教練的角色，提醒您服藥、運動或吃得更健康。
-                </p>
-              </div>
-            </div>
+    <div class="modal fade" id="medicalModal" tabindex="-1" aria-labelledby="medicalModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="medicalModalLabel">AI醫生助理的協助...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="modal-footer container">
-          <div class="row">
-            <button
-              type="button"
-              class="col btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+          <div class="modal-body container">
+            <div class="row justify-content-center">
+              <img class="col-6 img-fluid" src="../img/ai/for_modal/doctor.png" alt="">
+            </div>
+            <hr>
+            <p>
+              AI 應用程式可提供個人化的醫療和 X 光判讀。個人健康照護助理可以扮演人生教練的角色，提醒您服藥、運動或吃得更健康。
+            </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="col btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
   <!-- shoppingModal -->
-  <div
-  class="modal fade"
-  id="shoppingModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content bg-dark">
-      <div class="modal-header">
-        <h5 class="modal-title text-light" id="exampleModalLabel">
-          零售與製造業也逐漸被AI改變...
-        </h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <img
-                class="img-fluid"
-                src="../img/ai/for_modal/shopping.png"
-                alt=""
-              />
-              <p class="text-light">
-                零售業： <br />
-                AI
-                提供虛擬購物的功能，可給予個人化的建議，並且和消費者討論購買選項。庫存管理和站點配置技術，也可透過
-                AI 改善。
-              </p>
-              <p class="text-light">
-                製造業： <br />
-                AI
-                可以分析從互聯設備串流傳來的工廠物聯網資料，運用循環式網路來預測預期的負載和需求；循環式網路是一種特定的深度學習網路，搭配序列資料使用。
-              </p>
-            </div>
-          </div>
+  <div class="modal fade" id="shoppingModal" tabindex="-1" aria-labelledby="shoppingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="shoppingModalLabel">零售與製造業也逐漸被AI改變...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer container">
-        <div class="row">
-          <button
-            type="button"
-            class="col btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
+        <div class="modal-body container">
+          <div class="row justify-content-center">
+            <img class="col-6 img-fluid" src="../img/ai/for_modal/shopping.png" alt="">
+          </div>
+          <hr>
+          <p>
+            零售業：
+AI 提供虛擬購物的功能，可給予個人化的建議，並且和消費者討論購買選項。庫存管理和站點配置技術，也可透過 AI 改善。
+
+製造業：
+AI 可以分析從互聯設備串流傳來的工廠物聯網資料，運用循環式網路來預測預期的負載和需求；循環式網路是一種特定的深度學習網路，搭配序列資料使用。
+          </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="col btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-  </div>
   </div>
   <!-- assistantModal -->
-  <div
-  class="modal fade"
-  id="assistantModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content bg-dark">
-      <div class="modal-header">
-        <h5 class="modal-title text-light" id="exampleModalLabel">
-          日常生活中的AI
-        </h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <img
-                class="img-fluid"
-                src="../img/ai/for_modal/robot.png"
-                alt=""
-              />
-              <p class="text-light">
-                生活中，常見智慧音箱及手機AI助理運用的語音辨識功能；Netflix、YouTube為你推薦的影音演算法；AI客服辨識客戶想法，提出個人化回覆⋯⋯AI人工智慧應用早已無所不在，持續為你改善生活品質。
-              </p>
-            </div>
-          </div>
+  <div class="modal fade" id="assistantModal" tabindex="-1" aria-labelledby="assistantModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="assistantModalLabel">日常生活中的AI</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer container">
-        <div class="row">
-          <button
-            type="button"
-            class="col btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
+        <div class="modal-body container">
+          <div class="row justify-content-center">
+            <img class="col-6 img-fluid" src="../img/ai/for_modal/robot.png" alt="">
+          </div>
+          <hr>
+          <p>
+            生活中，常見智慧音箱及手機AI助理運用的語音辨識功能；Netflix、YouTube為你推薦的影音演算法；AI客服辨識客戶想法，提出個人化回覆⋯⋯AI人工智慧應用早已無所不在，持續為你改善生活品質。
+          </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="col btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-  </div>
   </div>
   <!-- goodJobModal -->
   <div class="modal fade" id="goodJobModal" tabindex="-1" aria-labelledby="goodJobModal" aria-hidden="true">
@@ -650,7 +503,7 @@
           </div>
         </div>
         <div class="modal-footer">
-            <a href="../main_page.html" class="col btn btn-outline-light">點我繼續了解</a>
+            <a href="../main_page.html" class="col btn btn-outline-light loud-link-click" data-sound="decision10">點我繼續了解</a>
         </div>
       </div>
     </div>
@@ -667,6 +520,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/loudlinks.min.js"></script>
     <script>
       $(document).ready(function (e) {
         $("img[usemap]").rwdImageMaps();

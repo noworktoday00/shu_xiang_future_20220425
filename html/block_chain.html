@@ -57,19 +57,19 @@
         <div class="col-md-6 align-self-center" style="position: relative" >
           <img class="img-fluid" id="block-chain-map-img" src="../img/block_chain/block_chain.gif" usemap="#block-chain-map" alt="" />
           <map name="block-chain-map" id="block-chain-map">
-            <span data-bs-toggle="modal" data-bs-target="#doctorModal">
+            <span class="loud-link-click" data-sound="decision8" data-bs-toggle="modal" data-bs-target="#doctorModal">
               <area  alt="" title="區塊鏈與醫療安全" href="#" shape="poly" coords="604,480,603,459,635,443,633,433,686,407,715,430,713,440,742,462,742,478,675,519" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#artModal">
+            <span class="loud-link-click" data-sound="decision2" data-bs-toggle="modal" data-bs-target="#artModal">
               <area  alt="" title="NFT 與 數位藝術" href="#" shape="poly" coords="695,312,761,276,762,259,726,237,727,116,662,76,651,96,659,237,630,255,639,281" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#contractModal">
+            <span class="loud-link-click" data-sound="decision3" data-bs-toggle="modal" data-bs-target="#contractModal">
               <area  alt="" title="區塊鏈與數位合約" href="#" shape="poly" coords="517,329,517,350,587,390,657,348,657,332,620,314,622,259,574,260,550,279,544,317" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#musicModal">
+            <span class="loud-link-click" data-sound="decision4" data-bs-toggle="modal" data-bs-target="#musicModal">
               <area  alt="" title="區塊鏈與串流音樂的價值" href="#" shape="poly" coords="306,345,325,326,373,301,359,264,376,220,423,227,444,255,427,293,429,308,461,325,460,346,391,385" style="outline:none;" target="_self"     />
             </span>
-            <span data-bs-toggle="modal" data-bs-target="#lockModal">
+            <span class="loud-link-click" data-sound="decision5" data-bs-toggle="modal" data-bs-target="#lockModal">
               <area  alt="" title="區塊鏈與網路身份..." href="#" shape="poly" coords="173,336,146,349,140,381,152,399,196,411,244,405,266,389,266,359,251,340,236,334,237,299,226,292,208,267,189,271,178,303,168,314,163,340" style="outline:none;" target="_self"     />
             </span>
           </map>
@@ -88,25 +88,25 @@
             <div class="mx-5 mb-5 border border-light rounded p-3">
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault1">
                   市場上的虛擬貨幣越來越多，其實擔心會泡沫化 ?
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault2">
                   虛擬貨幣可可追蹤來源，且有加密性質，一定是個趨勢
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault3">
                   銀行戶頭以及生產都有區塊鏈追蹤交易，肯定會減少許多失誤
                 </label>
               </div>
               <div class="form-check mb-2">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                <label class="form-check-label" for="flexRadioDefault4">
+                <label class="form-check-label loud-link-click" data-sound="click_bubble" for="flexRadioDefault4">
                   所以這些區塊鏈的資料到底都存在什麼地方啊 ???
                 </label>              
               </div>
@@ -149,7 +149,7 @@
             </div>
             <div class="mx-5 mb-5">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
+                <button class="btn btn-outline-light loud-link-click" type="button" data-sound="decision11" data-bs-toggle="modal" data-bs-target="#goodJobModal">確認送出推薦</button>
               </div>
             </div>
           </form>
@@ -478,6 +478,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../js/loudlinks.min.js"></script>
     <script>
       $(document).ready(function (e) {
         $("img[usemap]").rwdImageMaps();
